@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ececec"
+    android:layout_height="90dp"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:id="@+id/ovningImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/legs" />
+
+        <TextView
+            android:id="@+id/ovningTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Bänkpress"
+            android:textColor="#777777"
+            android:textSize="22sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ovningImage"
+            android:layout_toEndOf="@+id/ovningImage"
+            android:layout_marginTop="0dp" />
+
+        <RatingBar
+            android:id="@+id/ovningRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/ovningCategory"
+            android:layout_alignLeft="@+id/ovningCategory"
+            android:layout_alignStart="@+id/ovningCategory" />
+
+
+        <TextView
+            android:id="@+id/ovningCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categori: Ben"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#aaa"
+            android:layout_below="@+id/ovningTitle"
+            android:layout_alignLeft="@+id/ovningTitle"
+            android:layout_alignStart="@+id/ovningTitle" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

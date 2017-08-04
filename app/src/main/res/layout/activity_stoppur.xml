@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    tools:context="com.example.moha.gymportalen.Stoppur">
+
+
+    <ImageView
+        android:id="@+id/headerTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bar_top"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:id="@+id/btnAddAnteckningar"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="17dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/addbtn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnAddAnteckningar"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Stoppur"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_below="@id/headerTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/clockLayout"
+            android:layout_below="@id/headerTop"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bgcir"
+            android:gravity="center">
+
+
+            <Chronometer
+                android:id="@+id/chronoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#999999"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="80sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clockLayout"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/btnReset"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/resetbtn"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:id="@+id/btnPause"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/pausebtn"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:id="@+id/btnStart"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/playbtn"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

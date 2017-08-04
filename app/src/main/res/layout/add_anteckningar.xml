@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Skapa anteckning"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="16dp"
+        android:background="#ececec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#999999"
+        android:hint="Namn"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="16dp"
+        android:gravity="top"
+        android:layout_marginTop="10dp"
+        android:background="#ececec"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Skriv Anteckning"
+        android:textColorHint="#999999"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_weight=".50" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Betygsätt din träning"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/edit_rating"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnSpara"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#60cca8"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:text="Spara" />
+</LinearLayout>

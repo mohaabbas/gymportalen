@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    tools:context="com.example.moha.gymportalen.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head2"
+        android:id="@+id/imageHeader"
+        android:adjustViewBounds="true"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageHeader"
+        android:layout_marginTop="-6dp">
+
+        <TableLayout
+            android:id="@+id/table_icons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="9dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btn_anteckningar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dip"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:onClick="displayAnteckningar"
+                    android:src="@drawable/anteckningar" />
+
+                <ImageView
+                    android:id="@+id/btn_ovningar"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ovningar"
+                    android:onClick="displayOvningar"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/btn_bmi"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:src="@drawable/raknabmi"
+                    android:layout_marginTop="-10dp"
+                    android:padding="5dp"
+                    android:onClick="displayBmi"/>
+
+                <ImageView
+                    android:id="@+id/btn_stoppur"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:layout_marginTop="-10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/stoppur"
+                    android:onClick="displayStoppur"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:id="@+id/imageLogo"
+        android:layout_below="@+id/imageHeader"/>
+
+
+</RelativeLayout>

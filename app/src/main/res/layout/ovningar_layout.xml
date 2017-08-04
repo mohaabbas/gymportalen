@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/ovningLayoutTitle"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#888888"
+        android:text="Här har vi en rubrik!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/ovningLayoutImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ovningLayoutTitle"
+        app:srcCompat="@drawable/cruovning" />
+
+    <TextView
+        android:id="@+id/ovningLayoutText"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ovningLayoutImage"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus ante, semper vel commodo vel, ultricies vitae nibh. Integer nisi magna, consequat in metus sed, varius molestie lorem. Phasellus in risus quis magna imperdiet euismod vitae sit amet ante." />
+
+    <RatingBar
+        android:id="@+id/ovningLayoutRating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ovningLayoutText"
+        android:layout_alignLeft="@+id/ovningCategory"
+        android:layout_alignStart="@+id/ovningCategory" />
+
+</RelativeLayout>

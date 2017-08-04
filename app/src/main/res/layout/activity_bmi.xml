@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    tools:context="com.example.moha.gymportalen.Bmi">
+
+
+    <ImageView
+        android:id="@+id/headerTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bar_top"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:id="@+id/btnAddAnteckningar"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="17dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/addbtn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnAddAnteckningar"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Räkna BMI"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_below="@id/headerTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bgcir"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/resultatSiffra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoText"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#999999"
+                android:text="00.00"
+                android:maxLength="5"
+                android:textSize="60sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/halsanView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="HÄLSA?"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/resultatSiffra"
+            android:id="@+id/relativeLayout">
+
+
+
+            <EditText
+                android:id="@+id/ange_langd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ange längd:"
+                android:background="#fff"
+                android:textColorHint="#bbbbbb"
+                android:layout_marginBottom="10dp"
+                android:padding="16dp"
+                android:inputType="number"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+            <EditText
+                android:id="@+id/ange_vikt"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/ange_langd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ange vikt:"
+                android:background="#ffffff"
+                android:textColorHint="#bbbbbb"
+                android:padding="16dp"
+                android:inputType="number"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <Button
+                android:id="@+id/btnBeraknaBmi"
+                android:layout_below="@id/ange_vikt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#60cca8"
+                android:padding="18dp"
+                android:text="Beräkna"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
